@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    letter-spacing: 2px
+    font-family: 'Fira Sans', sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+/*Estilos del header*/
+
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-container{ 
+margin: 5px;
+color:white;}
+.icon-container{
+    display: block;
+    width: 42px;
+    height: 42px;
+    background:  #009c8c ;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: auto;
+    cursor: pointer;
+   
+}
+/*-------------Estilos del menu------------------------*/
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+.menu, .menu__item{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    border-bottom: black 1px solid;    
+    display: block;
+    padding: 15px;
+    background: #009c8c ;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.menu__link:hover, .select{
+    background: white;
+    color: #009c8c ;
+}
+
+.mostrar{
+    left: 0;
+}
+
+/*ESTILOS DE BANNER*/
+
+.banner{
+    margin-top: -60px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: -1000;
+    border-bottom: black 4px solid;
+}
+.banner .Banner__contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    
+}
+.banner__txt{
+    display: none; 
+}
+/*MENU DE BOTON ANIMADO*/
+
+.icon_container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 32px;
+  height: 7px;
+  background-color: #fff;
+  margin: 5px ;
+  transition: 0.3s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -6px) ;
+  transform: rotate(45deg) translate(-9px, -6px) ;
+}
+
+/*-------------Estilos del SliderShow------------------------*/
+
+  .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+ /*jssor slider bullet skin 051 css*/
+        .jssorb051 .i {position:absolute;cursor:pointer;}
+        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+        .jssorb051 .i:hover .b {fill-opacity:.7;}
+        .jssorb051 .iav .b {fill-opacity: 1;}
+        .jssorb051 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+
